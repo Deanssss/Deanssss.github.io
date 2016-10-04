@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-Hans">
 <head>
 
     <!--[if lt IE 9]>
@@ -107,6 +107,8 @@
         </hgroup>
 
         
+        <p class="header-subtitle">好好看好好学！</p>
+        
 
         
 
@@ -163,7 +165,9 @@
                         
                             <li><a href="/archives/">所有文章</a></li>
                         
-                            <li><a href="/tags/">标签云</a></li>
+                            <li><a href="/tags/随笔">随笔</a></li>
+                        
+                            <li><a href="/tags/">标签</a></li>
                         
                             <li><a href="/about/">关于我</a></li>
                         
@@ -185,7 +189,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/test-闲语/">test 闲语</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/test/">test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/闲语/">闲语</a></li></ul>
                     </div>
                 </section>
                 
@@ -231,6 +235,8 @@
               <h1 class="header-author"><a href="/" title="回到主页">Dean</a></h1>
             </hgroup>
             
+            <p class="header-subtitle">好好看好好学！</p>
+            
             <nav class="header-menu">
                 <ul>
                 
@@ -238,7 +244,9 @@
                 
                     <li><a href="/archives/">所有文章</a></li>
                 
-                    <li><a href="/tags/">标签云</a></li>
+                    <li><a href="/tags/随笔">随笔</a></li>
+                
+                    <li><a href="/tags/">标签</a></li>
                 
                     <li><a href="/about/">关于我</a></li>
                 
@@ -269,6 +277,15 @@
       <time datetime="2016-10-04T21:40:46.000Z" itemprop="datePublished">2016-10-04</time>
 </a>
 
+ 
+    <a href="/2016/10/04/xiaozhan/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/10/04/xiaozhan/" ></span>
+        
+        
+    </a>
 
     </div>
   
@@ -299,6 +316,10 @@
     <div class="article-info article-info-index">
       
       
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/网站开发/">网站开发</a>
+    </div>
+
 
       
     <div class="article-tag tagcloud">
@@ -307,7 +328,7 @@
 
       
         <p class="article-more-link">
-          <a href="/2016/10/04/xiaozhan/#more">more >></a>
+          <a href="/2016/10/04/xiaozhan/#more">阅读全文 >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -333,6 +354,15 @@
       <time datetime="2016-10-04T09:40:46.000Z" itemprop="datePublished">2016-10-04</time>
 </a>
 
+ 
+    <a href="/2016/10/04/hello-world/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/10/04/hello-world/" ></span>
+        
+        
+    </a>
 
     </div>
   
@@ -363,15 +393,19 @@
     <div class="article-info article-info-index">
       
       
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/闲语人生/">闲语人生</a>
+    </div>
+
 
       
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test-闲语/">test 闲语</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/">test</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/闲语/">闲语</a></li></ul>
     </div>
 
       
         <p class="article-more-link">
-          <a href="/2016/10/04/hello-world/#more">more >></a>
+          <a href="/2016/10/04/hello-world/#more">阅读全文 >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -444,6 +478,31 @@
         })
     </script>
 
+
+    
+        <script>
+            if ($(".left-col").is(":visible")) {
+                var duoshuoQuery = {short_name:"deanssss"};
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'http://static.duoshuo.com/embed.js';
+                    s.async = true; s.charset = 'UTF-8';
+                    (d.head || d.body).appendChild(s);
+                })();
+
+                $(document).ready(function(){
+                    var $duoshuoCount = $(".ds-thread-count");
+                    $duoshuoCount.bind("DOMNodeInserted", function(e) {
+                        var num = $(this).text().replace(/[^0-9]/ig,"");
+                        $(this).siblings(".count-comment").text(num);
+                        $(this).remove();
+                    })
+                })
+            }
+        </script>
+    
+
+     
 
 
 
